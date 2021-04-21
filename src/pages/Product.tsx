@@ -5,20 +5,20 @@ import { useSelector } from 'react-redux'
 import { AppState } from '../types'
 
 export default function Product() {
-  const { id } = useParams()
+  const { name } = useParams()
 
-  const product = useSelector((state: AppState) =>
-    state.product.inCart.find((p) => p.id === id)
+  const country = useSelector((state: AppState) =>
+    state.countries.all.find((p) => p.name === name)
   )
 
-  if (!product) {
-    return <div>Product not found</div>
+  if (!country) {
+    return <div>Country Not Found</div>
   }
 
   return (
     <>
-      <h1>Product page</h1>
-      <h2>{`${product.name} - $${product.price}`}</h2>
+      <h1>{country.name}</h1>
+      <img src={country.flag} alt="" />
     </>
   )
 }

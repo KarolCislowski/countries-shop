@@ -5,11 +5,7 @@ export const GET_COUNTRIES = 'GET_COUNTRIES'
 export const GET_COUNTRIES_SUCCESS = 'GET_COUNTRIES_SUCCESS'
 
 // A product
-export type Product = {
-  id: string
-  name: string
-  price: number
-}
+export type Product = Country
 
 export type AddProductAction = {
   type: typeof ADD_PRODUCT
@@ -40,7 +36,6 @@ export type Country = {
   languages: Languages[]
   population: number
   region: string
-  numericCode: string
 }
 
 export type GetCountriesAction = {

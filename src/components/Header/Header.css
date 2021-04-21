@@ -1,0 +1,67 @@
+.header {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  flex-direction: column;
+  background-color: white;
+}
+
+.header__level__one {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.header__logo {
+  color: #000;
+  font-size: larger;
+  font-family: 'Audiowide', cursive;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.header__option__lineTwo {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.header__optionBasket {
+  display: flex;
+  align-items: center;
+  color: #333;
+}
+
+.header__basketCount {
+  margin: 0 10px;
+}
+
+.header__level__two {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.basket__item {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(219, 219, 219);
+  padding: 2px 20px;
+  justify-content: space-between;
+}
+
+.basket__item__left {
+  display: flex;
+  align-items: center;
+}
+
+.basket__item img {
+  height: 25px;
+  width: 35px;
+  margin-right: 10px;
+}

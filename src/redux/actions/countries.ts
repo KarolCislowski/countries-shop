@@ -7,9 +7,8 @@ import {
 
 export const getCountries = () => {
   return async (dispatch: Dispatch) => {
-    const countryData = await fetch(
-      'https://restcountries.eu/rest/v2/all'
-    ).then((res) => res.json())
+    const res = await fetch('https://restcountries.eu/rest/v2/all')
+    const countryData = await res.json()
     dispatch(getCountriesSuccess(countryData))
   }
 }
