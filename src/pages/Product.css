@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1500px;
+  flex-direction: column;
+}
+
+.country__details {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.country__detail__image,
+.country__details__info {
+  width: 50%;
+  flex: 0.5;
+}
+
+@media (max-width: 600px) {
+  .country__detail__image,
+  .country__details__info {
+    flex: 1 100%;
+    max-width: 100%;
+  }
+}
+
+.country__details img {
+  border: 1px solid black;
+}
+
+.country__details__info {
+  padding: 30px;
+}
